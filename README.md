@@ -69,7 +69,8 @@ Delete user
     sudo cp .env.example .env
     sudo chown $(whoami) .env
     
-Change connection details to db in .env (DB_DATABASE, DB_USERNAME, DB_PASSWORD)
+Change connection details to db in .env (DB_DATABASE, DB_USERNAME, DB_PASSWORD).
+
 After db connection setup:
 
     php artisan key:generate
