@@ -63,7 +63,7 @@ Delete user
 
 ## Installation
 
-    git clone
+    git clone https://github.com/taras-drobinskyi/eltexsoft-test.git
     cd eltexsoft-test
     composer install
     php artisan migrate:fresh --seed --seeder=PermissionsSeeder
