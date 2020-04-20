@@ -67,6 +67,9 @@ Delete user
     cd eltexsoft-test
     composer install
     php artisan migrate:fresh --seed --seeder=PermissionsSeeder
+    sudo cp .env.example .env
+    php artisan key:generate
+    php artisan config:cache
     php artisan serve
 
 This makes all the migration and creates first user with
