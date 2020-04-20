@@ -66,10 +66,15 @@ Delete user
     git clone https://github.com/taras-drobinskyi/eltexsoft-test.git
     cd eltexsoft-test
     composer install
-    php artisan migrate:fresh --seed --seeder=PermissionsSeeder
     sudo cp .env.example .env
+    sudo chown $(whoami) .env
+    
+Change connection details to db in .env (DB_DATABASE, DB_USERNAME, DB_PASSWORD)
+After db connection setup:
+
     php artisan key:generate
     php artisan config:cache
+    php artisan migrate:fresh --seed --seeder=PermissionsSeeder
     php artisan serve
 
 This makes all the migration and creates first user with
