@@ -9,7 +9,7 @@ This project made s test task for EltexSoft
 - Role based access control
 - User Management by roles and permissions
 
-##API (REST/JSON)
+## API (REST/JSON)
 
 Api Token you can get from user details at admin panel
 
